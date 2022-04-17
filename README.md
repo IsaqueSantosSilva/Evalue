@@ -2,7 +2,7 @@
 
 <br />
 
-Protótipo: https://isaquesantossilva.github.io/Lista-de-Afazeres-Javascript/
+Protótipo: https://fantastic-frangollo-cf802b.netlify.app/
 
 <br />
 
