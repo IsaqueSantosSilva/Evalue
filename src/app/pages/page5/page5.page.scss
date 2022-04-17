@@ -1,0 +1,242 @@
+.duo-menu {
+  margin-top: 2rem;
+  display: flex;
+  background-color: #ffffff;
+
+  div:nth-of-type(1) {
+    background-color: #bbf300;
+  }
+
+  div:hover {
+    transform: scale(1.1);
+  }
+
+  div {
+    width: 50%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .4s;
+
+    span {
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+    }
+  }
+}
+
+.efeturar-soli-container {
+  .logo {
+    margin: auto;
+    max-width: 40%;
+    margin-top: 3.5rem;
+  }
+
+  .buttons {
+    margin-top: 3.5rem;
+    display: grid;
+    gap: 0.7rem;
+    justify-content: center;
+
+    ion-button {
+      background-color: #fff;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      color: #000000;
+      border-radius: 37px;
+      letter-spacing: -0.5px;
+      width: 100%;
+      max-width: 275px;
+      height: 46px;
+      text-transform: capitalize;
+      transition: .5s;
+    }
+
+    ion-button:hover {
+      background-color: #bbf300;
+    }
+  }
+}
+
+.minhas-soli-container {
+  .solicitacoes-div {
+    // border: 1px solid red;
+    max-width: 75%;
+    margin: auto;
+    margin-top: 4rem;
+
+    .solicitacoes {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.8rem;
+      margin-bottom: 20px;
+
+      img {
+        max-width: 50px;
+        border-radius: 50em;
+      }
+
+      div {
+        display: grid;
+        gap: 0.2rem;
+
+        span:nth-of-type(1) {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: -0.15px;
+          color: #fff;
+        }
+
+        span:nth-of-type(2) {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          letter-spacing: -0.15px;
+          color: #bbf300;
+        }
+      }
+    }
+  }
+
+  .logo {
+    max-width: 40%;
+    margin: auto;
+    margin-top: 20rem;
+  }
+}
+
+.active {
+  background-color: #bbf300;
+}
+
+@media only screen and (min-width: 800px) {
+  .duo-menu {
+    max-width: 40%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    div {
+      height: 40px;
+
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .efeturar-soli-container {
+    .logo {
+      max-width: 10%;
+      margin-top: 2rem;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+
+      ion-button {
+        font-size: 14px;
+        max-width: 245px;
+        height: 35px;
+      }
+    }
+  }
+
+  .minhas-soli-container {
+    .solicitacoes-div {
+      width: max-content;
+      margin-top: 1.5rem;
+  
+      .solicitacoes {
+        gap: 0.8rem;
+  
+        img {
+          max-width: 50px;
+        }
+  
+        div {
+          display: grid;
+          gap: 0.2rem;
+  
+          span:nth-of-type(1) {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: -0.15px;
+            color: #fff;
+          }
+  
+          span:nth-of-type(2) {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: -0.15px;
+            color: #bbf300;
+          }
+        }
+      }
+    }
+  
+    .logo {
+      max-width: 10%;
+      margin-top: 2rem;
+      position: absolute;
+      transform: translate(-50%);
+      left: 50%;
+      bottom: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .duo-menu {
+    margin-top: 1rem;
+    div {
+      width: 50%;
+      height: 60px;
+      display: flex;
+
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .efeturar-soli-container {
+    .logo {
+      margin: auto;
+      max-width: 30%;
+      margin-top: 2rem;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+      gap: 0.4rem;
+    }
+  }
+
+  .minhas-soli-container {
+    .solicitacoes-div {
+      margin-top: 3rem;
+
+      .solicitacoes {
+        img {
+          max-width: 50px;
+        }
+      }
+    }
+
+    .logo {
+      max-width: 30%;
+      margin-top: 8rem;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="back-button-div" routerLink="/page5">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>Solicitar para Impressos</span>
+  </div>
+
+  <div class="container">
+    <div class="text-div">
+      <span>Nesse formulário realize solicitação de layouts para impresso:</span>
+      <span>PANFLETOS - CARTÕES DE VISITA - BANNERS - ADESIVOS - OUTDOORS</span>
+    </div>
+
+    <form class="form">
+      <ion-label>Cliente</ion-label>
+      <ion-input placeholder="Nome"></ion-input>
+      <ion-label>Solicitante</ion-label>
+      <ion-input placeholder="Nome da Empresa"></ion-input>
+      <ion-label>Descreva sua solicitação</ion-label>
+      <ion-textarea
+        rows="8"
+        placeholder="Faça uma descrição detralhada da sua solicitação"
+      ></ion-textarea>
+      <div class="input-radio">
+          <ion-radio-group value="biff">
+            <div>
+              <ion-label>Qual a sua prioridade</ion-label>
+            </div>
+            <div class="inputs">
+              <div>
+                <ion-radio slot="start" value="biff"></ion-radio>
+                <ion-label>Baixa</ion-label>
+              </div>
+              <div>
+                <ion-radio slot="start" value="griff"></ion-radio>
+                <ion-label>Média</ion-label>
+              </div>
+              <div>
+                <ion-radio slot="start" value="buford"></ion-radio>
+                <ion-label>Alta</ion-label>
+              </div>
+            </div>
+            <span>A prioridade será analisada por nossa equipe</span>
+          </ion-radio-group>
+      </div>
+      <div class="input-file">
+        <label for="arquivo"
+          ><ion-icon name="cloud-upload-outline"></ion-icon> Anexar um
+          arquivo</label
+        >
+        <input type="file" name="arquivo" id="arquivo" />
+      </div>
+      <div class="buttons">
+        <ion-button color="accent">Solicitar</ion-button>
+      </div>
+    </form>
+
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="" />
+    </div>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

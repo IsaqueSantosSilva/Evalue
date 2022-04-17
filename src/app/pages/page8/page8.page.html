@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="back-button-div" routerLink="/page5">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>Solicitar Logotipo Empresarial</span>
+  </div>
+
+  <div class="container">
+    <div class="text-div">
+      <span>
+        Nesse etapa preencha os campos abaixo para ajudar nossa equipe a
+        desenvolver o seu projeto.
+      </span>
+    </div>
+
+    <form class="form">
+      <ion-label>Escreva nesse campo o nome da sua marca</ion-label>
+      <ion-input placeholder="Nome"></ion-input>
+      <ion-label>Quais são os produtos/serviços que você oferece?</ion-label>
+      <ion-textarea rows="3"></ion-textarea>
+      <ion-label>Qual é o seu slogan?</ion-label>
+      <ion-input></ion-input>
+      <ion-label
+        >Qual é o objetivo que você deseja alcançar com este projeto?</ion-label
+      >
+      <ion-textarea rows="4"></ion-textarea>
+
+      <div class="input-file">
+        <label for="arquivo"
+          ><ion-icon name="cloud-upload-outline"></ion-icon> Anexar um
+          arquivo</label
+        >
+        <input type="file" name="arquivo" id="arquivo" />
+      </div>
+
+      <div class="buttons">
+        <ion-button color="accent">Enviar</ion-button>
+      </div>
+    </form>
+
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="" />
+    </div>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

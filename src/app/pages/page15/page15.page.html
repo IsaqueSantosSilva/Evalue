@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="container">
+    <div class="profile-div">
+      <div class="profile-pic-div">
+        <ion-icon name="camera-outline" (click)="showModalTwo()"></ion-icon>
+        <img src="https://st.depositphotos.com/2101611/3925/v/950/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="" />
+      </div>
+      <p>Andrew Sousa</p>
+      <p>andreeewk2@gmail.com</p>
+    </div>
+    <div class="profile-info">
+      <div class="profile-info-header">
+        <span>Meus dados pessoais</span>
+      </div>
+      <div class="profile-info-links-div">
+          <div color="accent" routerLink="/page16">
+            <ion-icon name="person-outline"></ion-icon>
+            <ion-label> Meus dados </ion-label>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+          <div color="accent" routerLink="/page18">
+            <ion-icon name="newspaper-outline"></ion-icon>
+            <ion-label> Termos e política de privacidade </ion-label>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+          <div color="accent">
+            <ion-icon name="exit-outline"></ion-icon>
+            <ion-label> Sair </ion-label>
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+      </div>
+      <div class="logo">
+        <img src="../../../assets/logo.svg" alt="">
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

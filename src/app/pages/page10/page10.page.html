@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="back-button-div" routerLink="/page5">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>Sugestões</span>
+  </div>
+
+  <div class="container">
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="" />
+    </div>
+
+    <form class="form">
+      <ion-label>Seu Nome</ion-label>
+      <ion-input placeholder="Nome"></ion-input>
+      <ion-label>Nome da Empresa</ion-label>
+      <ion-input placeholder="Nome da Empresa"></ion-input>
+      <ion-label>Descreva sua sugestão</ion-label>
+      <ion-textarea rows="8"></ion-textarea>
+      <span>Iremos analisar com muito carinho a sua sugestão</span>
+      <div class="buttons">
+        <ion-button color="accent">Enviar</ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

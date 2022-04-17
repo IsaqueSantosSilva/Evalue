@@ -1,0 +1,36 @@
+.header {
+  background-color: #bbf300;
+  padding: 0 1rem;
+
+  img {
+    background-color: #fff;
+    border-radius: 50em;
+    padding: 0.4rem;
+  }
+
+  .nav-links {
+    display: none;
+    list-style: none;
+    gap: 1rem;
+
+    li {
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .active {
+      color: #ce3030;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    padding: 0 1rem;
+    
+    .nav-links {
+      display: flex;
+    }
+  }
+}

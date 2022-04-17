@@ -1,0 +1,151 @@
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 87%;
+
+  .image-container {
+    margin: auto;
+    max-width: 35%;
+    margin-bottom: 4.5rem;
+  }
+
+  .welcome-mssg {
+    display: grid;
+    margin-bottom: 2.5rem;
+
+    span:nth-of-type(1) {
+      color: #bbf300;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    span:nth-of-type(2) {
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+  }
+
+  .inputs {
+    ion-label {
+      font-size: 12px;
+      font-weight: 700;
+      position: relative;
+      bottom: 7px;
+      color: #fff;
+    }
+
+    ion-input {
+      background-color: #000000;
+      color: #000000;
+      border-radius: 10px;
+      height: 43px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #8e8e8e;
+      margin-bottom: 1.5rem;
+      outline: 1px solid #ffffff;
+    }
+
+    ion-label:nth-of-type(2) {
+      font-size: 12px;
+      font-weight: 700;
+      position: relative;
+      bottom: -10px;
+    }
+
+    ion-input:nth-of-type(2) {
+      margin-top: 1rem;
+    }
+  }
+
+  .buttons {
+    // text-align: center;
+
+    div:nth-of-type(1) {
+      display: flex;
+      max-width: 90%;
+      padding: 0 0.5rem;
+      margin-bottom: 2.5rem;
+
+      ion-checkbox {
+        font-size: 50px;
+        border: 1px solid #bbf300;
+        border-radius: 3px;
+        height: 17px;
+        min-width: 18px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 13px;
+        color: #fff;
+
+        span {
+          color: #00a6a6;
+        }
+      }
+    }
+
+    div:nth-of-type(2) {
+      text-align: center;
+
+      ion-button {
+        height: 46px;
+        width: 100%;
+        max-width: 272px;
+        border-radius: 37px;
+        background: #bbf300;
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 700;
+
+        span {
+          color: #00a6a6;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    max-width: 40%;
+
+    .image-container {
+      max-width: 35%;
+      margin-bottom: 4rem;
+    }
+
+    .welcome-mssg {
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      div:nth-of-type(2) {
+        text-align: center;
+
+        ion-button {
+          height: 36px;
+          max-width: 222px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

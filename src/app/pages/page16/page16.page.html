@@ -1,0 +1,52 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="header" routerLink="/page15">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>Meus dados pessoais</span>
+  </div>
+
+  <div class="container">
+    <div class="text">
+      <span>Dados pessoais</span>
+      <ion-icon name="pencil-sharp" [routerLink]="['/page17']"></ion-icon>
+    </div>
+
+    <div class="profile-info">
+      <div class="info">
+        <span>Nome:</span>
+        <span>Marcelo</span>
+      </div>
+      <div class="info">
+        <span>Sobrenome:</span>
+        <span>Souza</span>
+      </div>
+      <div class="info">
+        <span>E-mail:</span>
+        <span>marcelosouza@email.com</span>
+      </div>
+      <div class="info">
+        <span>Celular:</span>
+        <span>(91) 9 9999-9999</span>
+      </div>
+      <div class="info">
+        <span>Telefone:</span>
+        <span>(91) 4 9999-9999</span>
+      </div>
+      <div class="info">
+        <span>Endereço:</span>
+        <span>Av.João barbosa, 82 Belém</span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <ion-button color="accent">Cancelar sua conta</ion-button>
+    </div>
+
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="" />
+    </div>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

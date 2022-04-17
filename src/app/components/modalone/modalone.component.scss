@@ -1,0 +1,32 @@
+.container {
+  color: #000;
+  height: max-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding-left: 1.5rem;
+
+  div:nth-of-type(1) {
+    margin-bottom: 15px;
+
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    ion-icon {
+      color: #5a5a5a;
+      font-size: 36px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: -0.3px;
+    }
+  }
+}

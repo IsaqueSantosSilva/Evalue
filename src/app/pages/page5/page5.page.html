@@ -1,0 +1,69 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="duo-menu">
+    <div
+      (click)="showSolicitacoes() "
+      [ngStyle]="{'background-color':this.efeturarSoliContainer === true ? '#bbf300' : '#fff'}"
+    >
+      <span>Efetuar solicitação</span>
+    </div>
+    <div
+      (click)="showSolicitacoesOptions()"
+      [ngStyle]="{'background-color':this.minhasSoliContainer === true ? '#bbf300' : '#fff'}"
+    >
+      <span>Minhas solicitações</span>
+    </div>
+  </div>
+
+  <div class="efeturar-soli-container" *ngIf="efeturarSoliContainer">
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="" />
+    </div>
+
+    <div class="buttons">
+      <ion-button color="accent" routerLink="/page6">Solicitar de Card Digital</ion-button>
+      <ion-button color="accent" routerLink="/page7">Solicitar de Arte de Impresso</ion-button>
+      <ion-button color="accent" routerLink="/page8">Solicitar Logotipo Empresarial</ion-button>
+      <ion-button color="accent" routerLink="/page9">Solicitar Produção de Áudio</ion-button>
+      <ion-button color="accent" routerLink="/page10">Enviar Sugestões</ion-button>
+    </div>
+  </div>
+
+  <div class="minhas-soli-container" *ngIf="minhasSoliContainer">
+    <div class="solicitacoes-div">
+
+      <div class="solicitacoes">
+        <img src="https://st.depositphotos.com/2101611/3925/v/950/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="" />
+        <div>
+          <span>Solicitação do Logotipo</span>
+          <span>02-04-2021</span>
+        </div>
+      </div>
+
+      <div class="solicitacoes">
+        <img src="https://st.depositphotos.com/2101611/3925/v/950/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="" />
+        <div>
+          <span>Solicitação Arte Digital</span>
+          <span>02-04-2021</span>
+        </div>
+      </div>
+
+      <div class="solicitacoes">
+        <img src="https://st.depositphotos.com/2101611/3925/v/950/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg" alt="" />
+        <div>
+          <span>Solicitação do Impresso</span>
+          <span>02-04-2021</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="" />
+    </div>
+
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

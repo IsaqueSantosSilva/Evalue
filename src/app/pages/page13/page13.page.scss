@@ -1,0 +1,92 @@
+.container {
+  .month-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    margin: auto;
+    margin-top: 3rem;
+    max-width: 90%;
+
+    .month {
+      text-align: center;
+      display: grid;
+
+      img {
+        max-width: 87px;
+        display: block;
+        margin: auto;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: -0.3px;
+        color: #bbf300;
+        padding-top: 0.8rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .logo {
+    margin: auto;
+    margin-top: 5rem;
+    max-width: 27%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    .month-div {
+      gap: 0.5rem 2rem;
+      margin-top: 2rem;
+      max-width: 60%;
+
+      .month {
+        cursor: pointer;
+        transition: 0.4s;
+
+        img {
+          max-width: 90px;
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+
+      .month:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .logo {
+      margin-top: 8rem;
+      max-width: 13%;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    .month-div {
+      gap: 0.5rem 1rem;
+      margin-top: 2rem;
+      .month {
+        img {
+          max-width: 80px;
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .logo {
+      margin-top: 3rem;
+      max-width: 27%;
+    }
+  }
+}

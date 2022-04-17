@@ -1,0 +1,107 @@
+.header {
+  background-color: #fff;
+  border-bottom: 2px solid #bbf300;
+  color: #000;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+
+  span {
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: -0.8px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+.container {
+  margin-top: 5rem;
+
+  .notification-div {
+    .notification {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: auto;
+      max-width: 76%;
+
+      img {
+        width: 46px;
+        height: 46px;
+      }
+
+      p {
+        background-color: #fff;
+        color: #000;
+        border-radius: 0px 20px 20px;
+        font-size: 14px;
+        letter-spacing: -0.15px;
+        padding: 10px;
+      }
+    }
+  }
+
+  .logo {
+    max-width: 30%;
+    margin: auto;
+    margin-top: 9rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    padding: 0.2rem 0;
+    margin-top: 0.5rem;
+  
+    span {
+      font-size: 16px;
+    }
+  }
+  
+  .container {
+    width: max-content;
+    margin: auto;
+    margin-top: 1.5rem;
+  
+    .notification-div {
+      .notification {
+        img {
+          width: 46px;
+          height: 46px;
+        }
+      }
+    }
+  
+    .logo {
+      max-width: 15%;
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    padding: 1rem 0;
+    margin-top: 1rem;
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .container {
+    margin-top: 2rem;
+
+    .notification-div {
+      .notification {
+        max-width: 90%;
+      }
+    }
+
+    .logo {
+      margin-top: 4rem;
+    }
+  }
+}

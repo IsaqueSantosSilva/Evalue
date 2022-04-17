@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="back-button-div" routerLink="/page5">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>Solicitar Arte Digital</span>
+  </div>
+
+  <div class="container">
+    <p>
+      Nesse formulário você pode solicitar o desenvolvimento de arte digital
+      para uso em redes sociais e Whatsapp
+    </p>
+
+    <form class="form">
+      <ion-label>Cliente</ion-label>
+      <ion-input placeholder="Nome"></ion-input>
+      <ion-label>Solicitante</ion-label>
+      <ion-input placeholder="Nome da Empresa"></ion-input>
+      <ion-label>Descreva sua solicitação</ion-label>
+      <ion-textarea rows="8" placeholder="Faça uma descrição detralhada da sua solicitação"></ion-textarea>
+      <span>Descreva neste campo informações da sua ARTE</span>
+      <div class="input-file">
+        <label for="arquivo"><ion-icon name="cloud-upload-outline"></ion-icon> Anexar um arquivo</label>
+        <input type="file" name="arquivo" id="arquivo">
+      </div>
+      <div class="buttons">
+        <ion-button color="accent">Solicitar</ion-button>
+      </div>
+    </form>
+
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="">
+    </div>
+  </div>
+
+</ion-content>
+
+<app-footer></app-footer>

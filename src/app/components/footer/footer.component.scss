@@ -1,0 +1,45 @@
+.footer {
+  background-color: #bbf300;
+  color: #000;
+  padding: 0.2rem 0;
+
+  .nav-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+      background-color: #bbf300;
+      border: none;
+    }
+  }
+}
+
+.active {
+  filter: invert(37%) sepia(0%) saturate(117%) hue-rotate(156deg)
+    brightness(93%) contrast(92%);
+}
+
+@media screen and (min-width: 700px) {
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    background-color: #bbf300;
+    color: #000;
+    padding: 0.2rem 0;
+
+    .nav-icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      img {
+        max-width: 35px;
+      }
+    }
+  }
+}

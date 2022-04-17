@@ -1,0 +1,138 @@
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 87%;
+
+  .image-container {
+    margin: auto;
+    max-width: 35%;
+    margin-bottom: 4.5rem;
+  }
+
+  .text {
+    display: grid;
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    span:nth-of-type(1) {
+      font-weight: 700;
+      font-size: 24px;
+      color: #bbf300;
+    }
+
+    span:nth-of-type(2) {
+      font-weight: 700;
+      font-size: 12px;
+      margin-top: 11px;
+    }
+  }
+
+  .form {
+    .inputs {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      ion-input {
+        color: #bbf300;
+        border: 1px solid white;
+        font-size: 50px;
+        height: 109px;
+        width: 77px;
+        border-radius: 10px;
+        text-align: left;
+      }
+    }
+  }
+
+  .button {
+    text-align: center;
+
+    ion-button {
+      width: 272px;
+      height: 46px;
+      background: #bbf300;
+      border-radius: 37px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #000000;
+      text-transform: capitalize;
+      margin-top: 3rem;
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 12px;
+      color: #00a6a6;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 30%;
+
+    .image-container {
+      max-width: 60%;
+      margin-bottom: 4rem;
+    }
+
+    .form {
+      .inputs {
+        gap: 2rem;
+
+        ion-input {
+          font-size: 45px;
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 90%;
+
+    .form {
+      .inputs {
+        gap: 1.5rem;
+
+        ion-input {
+          font-size: 50px;
+          height: 109px;
+          width: 77px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container {
+    max-width: 90%;
+
+    .form {
+      .inputs {
+        gap: 1rem;
+
+        ion-input {
+          font-size: 40px;
+          height: 95px;
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 590px) {
+  .container {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,110 @@
+.header {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  padding-left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  ion-icon {
+    font-size: 22px;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.15px;
+
+    color: #000000;
+  }
+}
+
+.container {
+  margin: auto;
+  margin-top: 4.5rem;
+  max-width: 85%;
+  .text {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.15px;
+      color: #ffffff;
+    }
+
+    ion-icon {
+      color: #bbf300;
+      font-size: 23px;
+    }
+  }
+
+  .profile-info {
+    margin-top: 2.5rem;
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      margin-bottom: 1.1rem;
+
+      span:nth-of-type(1) {
+        width: 100%;
+        max-width: 80px;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: -0.15px;
+        color: #bbf300;
+      }
+
+      span:nth-of-type(2) {
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: -0.3px;
+        color: #ffffff;
+        border-radius: 10px;
+
+        width: 100%;
+        border: 1px solid #ffffff;
+        padding: 7px 15px;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    padding-right: 10px;
+
+    ion-button {
+      background: #bbf300;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: -0.15px;
+      color: #000000;
+      text-transform: capitalize;
+      border-radius: 37px;
+      height: 25px;
+    }
+  }
+
+  .logo {
+    margin: auto;
+    margin-top: 10rem;
+    max-width: 30%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    margin-top: 1rem;
+    max-width: 40%;
+    .logo {
+      margin-top: 4rem;
+      max-width: 20%;
+    }
+  }
+}

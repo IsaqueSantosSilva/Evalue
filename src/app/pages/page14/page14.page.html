@@ -1,0 +1,63 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="header" routerLink="/page13">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+    <span>{{ month }}</span>
+  </div>
+
+  <div class="container">
+    <div class="pictures-div">
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto1.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto2.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto3.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto4.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto5.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto6.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto7.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto8.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto9.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto10.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto11.png" alt="">
+      </div>
+      <div class="pictures" (click)="showModalOne()">
+        <img src="../../../assets/random-pics/foto12.png" alt="">
+      </div>
+    </div>
+
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="">
+    </div>
+
+  </div>
+
+  <ion-modal [isOpen]="isModalOpen">
+    <ng-template>
+      <app-modal-content></app-modal-content>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>
+
+<app-footer></app-footer>

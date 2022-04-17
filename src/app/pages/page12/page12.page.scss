@@ -1,0 +1,55 @@
+@import "../page11/page11.page.scss";
+
+.container {
+  .notification-div {
+    .notification {
+      align-items: flex-start;
+
+      img {
+        position: relative;
+        top: 15px;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    max-width: 76%;
+
+    ion-button {
+      border-radius: 50em;
+      background-color: #bbf300;
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -0.15px;
+      color: #000000;
+      width: 99px;
+      height: 29px;
+
+      ion-icon {
+        position: relative;
+        right: 8px;
+        bottom: 1px;
+      }
+    }
+  }
+
+  .logo {
+    margin-top: 20rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    margin: auto;
+    max-width: 40%;
+
+    .logo {
+      margin-top: 15rem;
+    }
+  }
+}

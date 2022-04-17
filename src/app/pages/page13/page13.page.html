@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<ion-content>
+  <div class="container">
+    <div class="month-div">
+      
+      <div class="month" *ngFor="let months of months" [routerLink]="['/page14/'  + months.month ]">
+        <img src="../../../assets/months/{{ months.img }}.png" alt="" />
+        <span>{{ months.month }}</span>
+      </div>
+
+    </div>
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="">
+    </div>
+  </div>
+
+  <!-- <div class="test" *ngFor="let months of months">
+    <img src="../../../assets/months/{{ months.img }}.png" alt="">
+    <p>{{ months.month }}</p>
+  </div> -->
+</ion-content>
+
+<app-footer></app-footer>
