@@ -1,9 +1,9 @@
-## Versão das ferramentas usadas:
+## Lista-de-Afazeres-Javascript
 
-Ionic CLI: 6.18.2
-</br>
-Angular CLI:13.2.6
-</br>
-NPM: 8.3.1
-</br>
-Node: v16.14.0
+<br />
+
+Protótipo: https://isaquesantossilva.github.io/Lista-de-Afazeres-Javascript/
+
+<br />
+
+<img src="https://github.com/IsaqueSantosSilva/Lista-de-Afazeres-Javascript/blob/main/assets/images/demo.png" alt="" width="1000" />
